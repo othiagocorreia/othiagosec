@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./public/js/tracingBeam.js" defer></script>
+
+    <script src="./public/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link href="./public/css/output.css" rel="stylesheet">
+    <title>THIAGO</title>
+</head>
+
+<body class="box-border m-0 p-0 h-screen bg-black_primary text-white_primary font-['Manrope']">
+    <div id="container" class="container w-full h-full">
+
+        <header id="header" class="w-full h-[60px] fixed top-0 z-50 flex items-center justify-center backdrop-blur-xl">
+
+
+            <nav id="navbar"
+                class="w-[90%] lg:w-[80%] h-full flex items-center justify-between border-b border-solid border-white bg-[rgba(14, 15, 17, 0.4)]">
+                <img class="max-w-36 h-9" src="./assets/logo/O.THIAGO.SEC-comp.svg" alt="">
+
+                <button id="btnMenuDropdown"
+                    class="w-9 h-9 flex lg:hidden items-center justify-center rounded-md bg-gray_primary">
+                    <svg class="block h-6 w-6" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            <div id="dropdownDivider"
+                class="absolute top-[12px] z-10 divide-y divide-gray-100 rounded-lg w-[90%] h-60 bg-black_secondary  dark:divide-gray-600 hidden">
+
+                <div class="w-full h-12 flex items-center justify-between px-3">
+                    <img class="max-w-36 h-9" src="./assets/logo/O.THIAGO.SEC-comp.svg" alt="">
+
+                    <button id="btnMenuDropdownClose"
+                        class="w-9 h-9 flex lg:hidden items-center justify-center rounded-md border">
+                        <svg class="h-6 w-6 block" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Experiências
+                            Passadas</a>
+                    </li>
+                </ul>
+                <div class="pt-4 px-2">
+                    <button
+                        class="pl-4 hover:shadow-[0_6px_20px_rgba(244,161,0,0.23)] hover:bg-[rgba(244,161,0,0.9)] px-8 bg-[#F4A100] rounded-md text-white font-light transition duration-200 ease-linear w-40 h-8 flex items-center justify-center text-center">Fale
+                        comigo
+                    </button>
+                </div>
+            </div>
+
+        </header>
+
+        <hr id="tracingBeam"
+            class="absolute top-[25%] bottom-0 left-[15.50px] bg-gradient-to-b from-transparent to-yellow_darker w-[2px] content-[''] h-16 z-10">
+
+        <div class="relative w-full h-full flex items-center justify-center">
+            <div
+                class="w-[90%] h-full flex items-center justify-left bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:57px_58px]">
+
+                <div class="w-[96%] h-64 flex items-left justify-center flex-col pl-6 ml-1">
+                    <p class="text-base flex items-center mb-1.5">Olá, eu sou o Thiago
+                        <span class="animate-wave ml-1.5">👋</span>
+                    </p>
+                    <h1 id="hero-phrase" class="text-3xl font-semibold mb-3.5">Desenvolvendo soluções para os seus
+                        problemas.</h1>
+                    <button
+                        class="shadow-[0_4px_14px_0_rgb(244,161,0,0.39)] hover:shadow-[0_6px_20px_rgba(244,161,0,0.23)] hover:bg-[rgba(244,161,0,0.9)] px-8 py-2 bg-[#F4A100] rounded-md text-white font-light transition duration-200 ease-linear w-[80%] h-10">Enviar
+                        Mensagem
+                    </button>
+                </div>
+
+                <div
+                    class="w-full h-16 absolute left-0 right-0 bottom-0 bg-gradient-to-b from-transparent to-black_primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[950px] relative flex items-center justify-center border-b-4">
+            <div class="w-[90%] h-[90%] flex items-center justify-center flex-col">
+                <p id="textHighlight" class="text-3xl font-semibold text-left textHighlight">Eu te ajudo a resolver seus
+                    problemas através
+                    da tecnologia. Tem alguma ideia que precisa de um sistema? Precisa achar lugar para colocar o seu
+                    site? Quer aumentar a segurança lógica da sua empresa ou automatizar tarefas dela? Entra em contato
+                    comigo, eu posso resolver.</p>
+            </div>
+        </div>
+
+        <div
+            class="w-full h-[600px] flex items-center justify-center [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] border">
+            <ul class="w-[90%] h-60 flex items-center justify-center border">
+
+
+            <li
+                    class="w-72 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                    </svg>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in
+                        Claim?</h5>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
+                        process on how to certify for your weekly benefits:</p>
+                </li>
+
+
+                 <!-- <div
+                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                    </svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help
+                            in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
+                        process on how to certify for your weekly benefits:</p>
+                </div>
+
+
+                <div
+                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                    </svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help
+                            in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
+                        process on how to certify for your weekly benefits:</p>
+                </div> -->
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
